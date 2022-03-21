@@ -7,19 +7,25 @@
     <title>Document</title>
     <style>
         /*input타입 radio나 인풋 타입에 쓰임*/
+       ul{
+           list-style: none;
+    }
+    li{display: inline-block;}
         a[href] {
             background-color: yellow;
             border: 1px solid#ccc;
-            font-weight: normal;
+            font-weight: normal;} 
+        a[target=_blank]{
+            color: red;
+            padding: 30px;
+            background: url(/css/ch10/images/1.jpg) no-repeat center right;
         }
-        a[href="#1"] {color: red;}
-        a[target] [href="#2"]{background-color: yellow;}
     </style>
 </head>
 <body>
     <ul>
-        <li><a target="_blank">메인 메뉴 : </a></li>
-        <li><a href="#" target="_blank">메뉴1</a></li>
+        <li><a href="http://www.naver.com" target="_blank">메인 메뉴 : </a></li>
+        <li><a href="#">메뉴1</a></li>
         <li><a href="#">메뉴2</a></li>
         <li><a href="#">메뉴3</a></li>
         <li><a href="#">메뉴4</a></li>

@@ -9,8 +9,11 @@
         /*section p{color: blue; background-color: antiquewhite }*/
         /*하위 선택자 전부적용*/
         /*한 단계 아래에 있는 p에만 적용 한곳에만 주고 싶을때 사용*/
-        h1+p{color: blue;}
-        p+h1{color: red;}
+        section > p{border: 1px solid black;}
+        section > h1{border: 1px solid black;}
+        section > div{border: 1px solid black;}
+        h1~p{color: blue;}
+        .red{color: red;}
         /*h와 같은 라인이며 뒤에 존재하는 모든p에 적용된다.*/
         /*
         h1, p: h1과 p 둘다
@@ -23,10 +26,10 @@
 </head>
 <body>
     <section>
-        <p>ddd</p>
         <h1>예약방범 & 사용 요금</h1>
+        <p>ddd</p>
         <p>아직 온라인 신청이...</p>
-        <div>
+        <div class="red">
             <p>가족실(2~4인) : 60,000원</p>
             <p>도미토리(4인) : 25,000원</p>
         </div>
