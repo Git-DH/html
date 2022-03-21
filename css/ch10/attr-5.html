@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [title ^= 'eng'] {color: red;}
+        /*시작 값이 같다면 뒤에 다른 요소가 있어도 적용됨*/
+        [title $='eng'] {color: black;}
+        /*끝자리 값에 맞춰서 적용됨*/
+        /* herf#에 속성값을 넣으면 같은 페이지안의 다른 속성값으로 이동됨*/
+        /*깃허브에서 가져와서 공부하기*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li>외국어 서비스 : </li>
+        <li><a href="#" title="english">영어</a></li>
+        <li><a href="#" title="japneseeng">일본어</a></li>
+        <li><a href="#" title="chinese">중국어</a></li>
+    </ul>
+    <div title="engsdfaasdf">어떤거1</div>
+    <h1 title="engdsafsad">어떤거2</h1>
+</body>
+</html>

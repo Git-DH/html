@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--밸류는 내가 보내고 싶은 문자로 설정
+    라디오 버튼은 중복불가 name속성으로 라디오 목차를 묶는것
+    input은 name이 필수다 그래야 백엔드에서 자료를 받는다.
+-->
+    <form>
+        <fieldset>
+            <legend>상품선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <label><input type="checkbox" value="s_3" checked>선물용 3kg</label>
+            <label><input type="checkbox" value="s_5">선물용 5kg</label>
+            <label><input type="checkbox" value="f_3">가정용 3kg</label>
+            <label><input type="checkbox" value="f_5">가저용 5kg</label>
+
+            <p><b>포장 선택</b></p>
+            <label><input type="radio" name="gift" value="yes" checked>선물포장</label>
+            <label><input type="radio" name="gift" value="no">선물포장 안함</label>
+            <div>
+                <input type="submit" value="저장">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

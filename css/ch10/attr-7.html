@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        자주 쓰일것 같은 속성 선택자
+        [속성]
+        [속성=값]
+        [속성 ~= 값]
+        [속성 *= 값]
+        */
+        [href *='naver'] {color: green;}
+        [href *='daum'] {color: yellow;}
+        [href *='google'] {color: red;}
+        /* *=는 어디든 같은 속성값이 있으면 적용된다.*/
+        /*혼자 다시 해보기*/
+    </style>
+</head>
+<body>
+    <p>링크로 돈이된다.</p>
+    <ul>
+        <li><a href="http://www.naver.com"></a>네이버</li>
+        <li><a href="http://www.daum.net"></a>다음</li>
+        <li><a href="http://www.google.com"></a>구글</li>
+    </ul>
+</body>
+</html>

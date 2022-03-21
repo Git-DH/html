@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*boxshadow: <수평> <수직> <흐림> <번짐> <색상> inset<안쪽으로>
+        수평-양수:오른쪽 음수:왼쪽
+        수직-양수:아래 음수:위
+        흐림-기본값0: 진함 값이 커질수록 부드러워지고 음수는 불가
+        번짐-양수:전방향 크게 음수:전방향 작게
+        */
+        div{
+            box-sizing: border-box;
+            padding: 10px;
+            width: 500px;
+            height: 200px;
+            border: 10px solid black;}
+            .box1{
+                box-shadow: 2px -2px 5px 0px;
+                border-style: dashed;
+                border-width: 20px;
+                border-radius: 25%;
+                /*테두리를 각각 건드리려면 탑 좌우 바텀 좌우 사용*/
+            }
+            .box2{
+                box-shadow: 5px 5px 15px blue ;
+                border-style: dotted;
+            }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <br> 
+    <div class="box2"></div>
+</body>
+</html>

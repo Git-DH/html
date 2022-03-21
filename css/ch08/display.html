@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*nav ul사이 ,있고 없고 차이있음 ,없으면 nav자식인 ul한테만 css적용한다는 뜻
+        ,가 있음 nav와 ul각각 css적용 한다는 뜻
+        >가 사이에 있음 바로 밑의 자식태그만 적용한다는 뜻
+        커서 포인터로 css적용 후 자바로 처리
+        */
+        *{box-sizing: border-box;}
+        nav > ul{list-style: none;}
+        nav > ul > li{
+            display: inline-block;
+            padding: 20px;
+            margin: 0 20px;
+            border: 1px solid #222;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--visibility: hidden;/ dsiplay: none;/ opacity(투명도조절)
+    visibililty는 공간은 존재하면서 보이지않음
+    display는 공간도 차지하지 않고 보이지않음
+    투명도는 써야할때 아니면 추천안함
+    -->
+    <div id="container">
+        <nav>
+            <div>
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </div>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+        </nav>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </div>
+</body>
+</html>

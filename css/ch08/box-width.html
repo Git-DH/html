@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*html의 폰트 사이즈는 기본적으로 16px로 정해짐
+		Rem: 1rem은16px 이고 html의 폰트사이즈가 바뀌면 같이 변함
+		em: 바로위의 부모태그의 px을 기준으로 값이 정해진다.
+		*/
+        div{border: 1px solid #000; margin-bottom: 10px; padding: 5px;}
+        .box1{width: 400px; height: 100px;}
+        .box2{width: 50%; height: 88px; background-color: antiquewhite;}
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

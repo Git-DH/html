@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        =만 사용하면 정확한 클래스명이 일치해야 한다
+        ~=는 클래스명이 들어가 있는 요소에 다 적용 된다
+        */
+        [class ~= button]{color: red;}
+        /*태그가 앞에 없으면 태그 상관없이 클래스 속성으로 css를 먹인다는 뜻*/
+    </style>
+</head>
+<body>
+    <ul>
+        <il><a href="#" class="flat">메뉴1</a></il>
+        <il><a href="#" class="flat">메뉴2</a></il>
+        <il><a href="#" class="button">메뉴3</a></il>
+        <il><a href="#" class="flat button">메뉴4</a></il>
+    </ul>
+    <div class="button">메뉴5</div>
+    <div class="flat button">메뉴5</div>
+</body>
+</html>
