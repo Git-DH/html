@@ -19,10 +19,20 @@
         .contents :nth-child(odd){color: red;}
         .contents :nth-child(even){color: aqua;}
         odd-홀수 even-짝수
+        .contents p:nth-of-type(odd){color: red;}
+        .contents h2:nth-of-type(even){color: blue;}
+        */
+        /*
+        차일드는 자식요소 순서
+        타입 순서는 앞에 설정된 타입의 순서로 적용
+        타입은 앞에 설정된 타입이 없으면 각 타입마다 순서대로 적용
         */
         .contents :nth-child(2n+1){color: aquamarine;}
         .contents :nth-child(2n){background-color: azure;}
-        /*괄호안에 넣는 식에 따라서 규칙설정 가능*/
+        /*
+        괄호안에 넣는 식에 따라서 규칙설정 가능
+        e.g 3칸씩 적용 2칸씩 적용 등
+        */
     </style>
 </head>
 <body>

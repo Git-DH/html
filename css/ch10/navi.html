@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul{background-color: aliceblue;}
+        .navi ul {background-color: aliceblue;}
         .navi ul li {display: inline-block; width: 150px; height: 10px;}
         .navi a:link, .navi a:visited{
             display: block; font-size: 14px; color: #000;
@@ -17,10 +17,11 @@
 /*가상 요소는 순서대로 입력해야 한다
 visited는 한번 선택을 한 요소에 적용된다
 */
-/*focus는 인풋이나 텍스트에리어 등 입력조건이 있어야 적용 가능함
+/*focus는 인풋이나 텍스트에리어 등 입력조건(클릭)이 있어야 적용 가능함
 div같은 요소도 tapindex를 주면 가능함
-ex) select, a, textarea, input, e, g 등
+ex) select, a, textarea, input,등 e.g-예를들어 라는 뜻=ex
 active는 기본적으로 다 가능
+shift+tab=뒤로 탭함
 */
         .navi a:hover, .navi a:focus{background-color: #222; color: #fff;}
         .navi a:active{background-color: #f00;}

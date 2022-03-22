@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>연습문제 2</title>  
+  <title>연습문제 1</title>  
   <style>
     * {
       box-sizing: border-box;
@@ -29,20 +29,18 @@
       height:35px;
       line-height: 35px;
     }
-    .top-menu li:not(:nth-child(6)):hover a {
-      background-color: #555; color: #fff;
+    .top-menu li:last-child {
+      border-right:none;      
     }
-
-    .top-menu li a:visited {
-      color:black;
+    .top-menu li:not(:last-child) a:hover {
+      background-color:#555;
+      color:#fff;
     }
-    li:nth-child(6) {
-      border-right: none;
+    .top-menu Li:last-child a:hover {
+      background-color:#b30000;
+      color:#fff;
     }
-    li:nth-child(6):hover a {
-      background-color: #b30000; color: #fff;
-    }     
-    
+    .top-menu li a{transition: all 0.5s ease-in;}
   </style>
 </head>
 <body>
@@ -55,6 +53,6 @@
       <li><a href="#">메뉴5</a></li>
       <li><a href="#">메뉴6</a></li>
     </ul>
-   </nav>
+  </nav>
 </body>
 </html>

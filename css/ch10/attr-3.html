@@ -11,11 +11,8 @@
         ~=는 클래스명이 들어가 있는 요소에 다 적용 된다
         */
         [class ~= button]{color: red;}
-        [class ~= flat]{background-color: aqua;}
-        div{
-            display: inline-block;
-        }
         /*태그가 앞에 없으면 태그 상관없이 클래스 속성으로 css를 먹인다는 뜻*/
+        input[type="text"][value~="안녕"]{color: aqua;}/**/
     </style>
 </head>
 <body>

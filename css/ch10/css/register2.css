@@ -1,8 +1,7 @@
 #signup label{display: inline-block; font-size: 13px; width: 110px;}
 input{line-height: 14px;}
 ul > li:not(:last-child){margin-bottom: 5px;}
-#signup input[type=text], #signup input[type=password],
-#signup input[type=tel], #signup input[type=email]{
+#signup input[type=text] [type=password] [type=tel] [type=eamil]{
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 13px;

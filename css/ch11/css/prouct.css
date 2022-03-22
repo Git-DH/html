@@ -1,0 +1,50 @@
+#container {
+    width:1000px;
+    margin:20px auto;
+  }
+  h1 {
+    text-align:center;
+  }
+  .prod-list {
+    list-style:none;
+    padding:0;
+  }
+  .prod-list li {
+    float: left;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .prod-list img {
+    margin:0;
+    padding:0;
+    float:left;
+    z-index:5;
+  } 
+  .prod-list .caption{
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    height: 200px;
+    padding-top: 20px;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 10;
+  }
+  /*
+  opacity로 요소의 투명도를 정할 수 있습니다.
+  숫자가 작을수록 투명해집니다.
+  0.0부터 1.0까지의 수
+  z-index
+  position 속성을 이용하면 요소를 겹치게 놓을 수 있습니다. 이때 요소들의 수직 위치를 z-index 속성으로 정합니다. 
+  값은 정수이며, 숫자가 클 수록 위로 올라오고, 숫자가 작을 수록 아래로 내려갑니다.*/
+  .prod-list li:hover .caption{
+    opacity: 0.8;
+    transform: translateY(-200px);
+  }
+  .prod-list .caption h2, .prod-list .caption p{
+    color: #fff;
+    text-align: center;
+  }
