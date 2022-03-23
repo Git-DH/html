@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        main과 cross방향 기억 중요
+        메인이 왼쪽에서 오른쪽이면 크로스는 위에서 아래쪽-이게 기본값(row)
+        메인이 위에서 아래면 크로스는 왼쪽에서 오른쪽(colum)
+        */
+        .container{
+            display: flex; flex-direction: column; 
+            justify-content: flex-end;/*main 방향 컨트롤*/
+            align-items: flex-start;/*cross 방향 컨트롤*/
+            border: 1px solid#111; background-color: aliceblue; padding: 5px;
+            height: 500px;
+        } 
+        div[id^='opt']{background-color: #000; color: #fff;}
+        /*^=는 시작값이 같은 것들에 적용*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="opt1">1</div>
+        <div id="opt2">2</div>
+        <div id="opt3">3</div>
+        <div id="opt4">4</div>
+    </div>
+</body>
+</html>
