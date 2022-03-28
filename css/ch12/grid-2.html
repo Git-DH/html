@@ -10,7 +10,9 @@
       height: 1200px;
       display:grid;  /* 그리드 컨테이너 지정 */
       grid-template-columns:repeat(3, 1fr);  /* 너비가 같은 칼럼 3개 */
-      /*grid-template-columns: 1fr 1fr 1fr; 위와 같은 식*/
+      /*grid-template-columns: 1fr 1fr 1fr; 위와 같은 식
+        1fr은 부모의 width값을 1배로 가져온다는 뜻
+      */
       grid-template-rows: minmax(100px, 400px) (100px, 400px);  
       /* 줄 높이 최소 100px 내용이 없더라도 너비가 100px 밑으로는 안 떨어짐*/
     }
