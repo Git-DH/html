@@ -10,6 +10,7 @@
     <!--레전드는 범내
     lable for는 인푹의 id와 같아야 한다.
     -->
+    <!-- id와 class는 선택자이고 id는 고유하다 -->
     <form>
         <fieldset>
             <legend>배송정보</legend>
@@ -17,6 +18,7 @@
         <li>
             <label for="user-name">이름</label>
             <input type="text" id="user-name">
+            <!-- 텍스트 노드와 떨어져 있을때 id값으로 연결함 class는 안됨 -->
         </li>
         <li>
             <label for="addr">배송 주소</label>
